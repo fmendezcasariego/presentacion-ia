@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -9,13 +10,14 @@
     <!-- Reveal.js Core CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reset.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css">
-    
+
     <!-- Custom Theme for UI/UX -->
     <link rel="stylesheet" href="css/theme.css">
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
     <div class="reveal">
         <div class="slides">
@@ -24,11 +26,14 @@
             <section>
                 <i data-lucide="sparkles" style="width: 80px; height: 80px; stroke: #a78bfa; margin-bottom: 20px;"></i>
                 <h1><span class="text-gradient">Inteligencia Artificial</span><br>en el Desarrollo</h1>
-                <p style="font-size: 1.5em; color: #cbd5e1;">De la Teoría a la Ejecución Real</p>
-                <p class="fragment" style="margin-top: 40px; font-size: 0.9em; opacity: 0.6;">(Usa las flechas del teclado para navegar)</p>
-                
+                <p style="font-size: 1.8em; color: #cbd5e1;">De la Teoría a la Ejecución Real</p>
+                <p class="fragment" style="margin-top: 40px; font-size: 1.3em; color: #000000;">(Usa las flechas del
+                    teclado para navegar)</p>
+
                 <aside class="notes">
-                    Bienvenidos. Hoy no hablaremos de código profundo ni algoritmos complejos. Hablaremos de cómo la IA transforma radicalmente nuestro enfoque hacia el desarrollo de software y nos da un alto valor de negocio.
+                    Bienvenidos. Hoy no hablaremos de código profundo ni algoritmos complejos. Hablaremos de cómo la IA
+                    transforma radicalmente nuestro enfoque hacia el desarrollo de software y nos da un alto valor de
+                    negocio.
                 </aside>
             </section>
 
@@ -44,86 +49,112 @@
                     <div class="glass-card fragment">
                         <i data-lucide="rocket"></i>
                         <h3>El Nuevo Estándar</h3>
-                        <p>Enfoque total en <strong>resolver problemas de negocio</strong> y acelerar la salida al mercado.</p>
+                        <p>Enfoque total en <strong>resolver problemas de negocio</strong> y acelerar la salida al
+                            mercado.</p>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    El viejo paradigma nos consumía el tiempo en la configuración. El nuevo estándar, impulsado por IA, nos devuelve ese tiempo para enfocarnos en lo que realmente importa.
+                    El viejo paradigma nos consumía el tiempo en la configuración. El nuevo estándar, impulsado por IA,
+                    nos devuelve ese tiempo para enfocarnos en lo que realmente importa.
                 </aside>
             </section>
 
             <!-- SLIDE 3: Hablando con la IA -->
-            <section>
+            <section id="slide-prompting">
                 <h2>Ingeniería de <span class="text-gradient">Contexto</span></h2>
                 <p>La regla de oro para hablar con la IA (Prompting).</p>
-                
-                <div class="grid-3" style="margin-top: 40px;">
-                    <div class="glass-card fragment">
+
+                <div class="grid-3" style="margin-top: 20px;">
+                    <div class="glass-card interactive-card" id="prompt-btn-rol">
                         <i data-lucide="user"></i>
                         <h4>1. Rol</h4>
-                        <p>¿Qué eres? (Ej: "Eres un Tech Lead")</p>
+                        <p style="font-size: 1.1em">Haz clic para añadir</p>
                     </div>
-                    <div class="glass-card fragment">
+                    <div class="glass-card interactive-card" id="prompt-btn-obj">
                         <i data-lucide="target"></i>
                         <h4>2. Objetivo</h4>
-                        <p>¿Qué queremos lograr exactamente?</p>
+                        <p style="font-size: 1.1em">Haz clic para añadir</p>
                     </div>
-                    <div class="glass-card fragment">
+                    <div class="glass-card interactive-card" id="prompt-btn-res">
                         <i data-lucide="shield-alert"></i>
                         <h4>3. Restricción</h4>
-                        <p>Iteración negativa ("No uses X")</p>
+                        <p style="font-size: 1.1em">Haz clic para añadir</p>
+                    </div>
+                </div>
+
+                <div id="prompt-preview-container" class="prompt-preview" style="margin-top: 20px; opacity: 0; transition: opacity 0.3s; text-align: left;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <span style="font-size: 1.2em; font-weight: bold;">Prompt Generado:</span>
+                        <div id="prompt-quality" class="quality-badge bad">Calidad: Baja</div>
+                    </div>
+                    <div id="prompt-text" class="code-block" style="min-height: 80px; font-family: monospace; font-size: 1.1em;">
+                        <span style="color: #666;">Esperando contexto...</span>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    Para que la IA no sea genérica, debemos darle un Rol, un Objetivo claro, y muy importante, Restricciones. Decirle qué NO hacer enfoca su trabajo y reduce errores.
+                    Para que la IA no sea genérica, debemos darle un Rol, un Objetivo claro, y muy importante,
+                    Restricciones. Decirle qué NO hacer enfoca su trabajo y reduce errores.
                 </aside>
             </section>
 
             <!-- SLIDE 4: Multi-Agent Roleplay -->
-            <section>
+            <section id="slide-agentes">
                 <h2>El <span class="text-gradient">Comité</span> de Expertos</h2>
                 <p>Simulando revisiones humanas en segundos.</p>
-                
-                <div class="glass-card" style="margin-top: 30px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div class="fragment" style="text-align: center;">
-                            <i data-lucide="code-2" style="width: 64px; height: 64px; stroke: #3b82f6;"></i>
+
+                <div class="glass-card" style="margin-top: 20px; padding: 20px;">
+                    <div class="multi-agent-container">
+                        <div class="agent-box developer">
+                            <i data-lucide="code-2" style="width: 48px; height: 48px; stroke: #3b82f6;"></i>
                             <h4>Desarrollador AI</h4>
-                            <p style="font-size: 0.8em;">Crea la solución</p>
                         </div>
-                        <div class="fragment" style="font-size: 2em; color: #475569;">⚔️</div>
-                        <div class="fragment" style="text-align: center;">
-                            <i data-lucide="shield-check" style="width: 64px; height: 64px; stroke: #f43f5e;"></i>
+                        
+                        <div class="pipeline-area">
+                            <div id="code-packet" class="packet">V1</div>
+                            <div class="path-line"></div>
+                        </div>
+
+                        <div class="agent-box auditor" id="auditor-box">
+                            <i data-lucide="shield-check" style="width: 48px; height: 48px; stroke: #f43f5e;"></i>
                             <h4>Auditor AI</h4>
-                            <p style="font-size: 0.8em;">Busca vulnerabilidades</p>
+                            <div id="auditor-status" class="status-badge">Esperando...</div>
                         </div>
                     </div>
-                    <div class="fragment" style="margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
-                        <p><strong>Resultado:</strong> Código pre-validado y curado.</p>
+                    
+                    <button id="btn-simulate-agents" class="action-btn" style="margin-top: 20px;">Iniciar Simulación</button>
+
+                    <div id="agent-result" style="margin-top: 20px; opacity: 0; font-size: 1.2em; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 15px;">
+                        <strong>Resultado:</strong> Código pre-validado y curado listo para PR.
                     </div>
                 </div>
 
                 <aside class="notes">
-                    En lugar de pedir una respuesta, ponemos a dos IAs a debatir. Un creador y un auditor. El resultado final ya pasó por un filtro de calidad antes de llegar a nosotros.
+                    En lugar de pedir una respuesta, ponemos a dos IAs a debatir. Un creador y un auditor. El resultado
+                    final ya pasó por un filtro de calidad antes de llegar a nosotros.
                 </aside>
             </section>
 
             <!-- SLIDE 5: La Gravedad -->
-            <section>
+            <section id="slide-gravedad">
                 <h2>El Enemigo Invisible</h2>
-                <div style="margin: 40px 0;">
-                    <span class="big-stat">70%</span>
-                    <p style="font-size: 1.5em;" class="accent">del tiempo se pierde en "Gravedad Técnica"</p>
+                
+                <div class="gravity-scene" id="gravity-scene">
+                    <div class="business-value" id="biz-value">30%<br><span style="font-size:0.6em">Valor Cliente</span></div>
+                    <div class="tech-gravity-block yaml" id="block-1">YAML Configs</div>
+                    <div class="tech-gravity-block permissions" id="block-2">IAM Permisos</div>
+                    <div class="tech-gravity-block infra" id="block-3">Infra Pipeline</div>
+                    <div class="gravity-percentage" id="gravity-perc">70% Gravedad Técnica</div>
                 </div>
-                <div class="fragment">
-                    <p>Configuraciones, YAMLs, integración de permisos y dependencias.</p>
-                    <p><em>Trabajo que no añade valor directo al cliente final.</em></p>
+
+                <div style="margin-top: 20px;">
+                    <button id="btn-antigravity" class="action-btn magic-btn">Activar Antigravity</button>
                 </div>
 
                 <aside class="notes">
-                    El 70% del tiempo de un desarrollador no es escribiendo funciones de negocio. Es peleando contra la "gravedad técnica". YAMLs, permisos, cables sueltos.
+                    El 70% del tiempo de un desarrollador no es escribiendo funciones de negocio. Es peleando contra la
+                    "gravedad técnica". YAMLs, permisos, cables sueltos.
                 </aside>
             </section>
 
@@ -131,7 +162,7 @@
             <section>
                 <h2>Google <span class="text-gradient">Antigravity</span></h2>
                 <h3 style="color: #94a3b8;">El Fin de la Gravedad</h3>
-                
+
                 <div class="glass-card" style="text-align: left;">
                     <ul>
                         <li class="fragment">Capa de orquestación inteligente.</li>
@@ -142,35 +173,50 @@
                 </div>
 
                 <aside class="notes">
-                    Antigravity es una herramienta que elimina ese 70%. Lee nuestro lenguaje, entiende nuestra intención y despliega directamente en Google Cloud o Databricks.
+                    Antigravity es una herramienta que elimina ese 70%. Lee nuestro lenguaje, entiende nuestra intención
+                    y despliega directamente en Google Cloud o Databricks.
                 </aside>
             </section>
 
             <!-- SLIDE 7: Casos MVP -->
-            <section>
+            <section id="slide-minutos">
                 <h2>De Semanas a <span class="text-gradient">Minutos</span></h2>
-                <p>El impacto real en la creación de MVPs</p>
-                
-                <div class="grid-3" style="margin-top: 30px;">
-                    <div class="glass-card fragment">
-                        <i data-lucide="database"></i>
-                        <h4>Datos</h4>
-                        <p style="font-size: 0.8em;">Pipeline Medallion en Databricks con calidad gobernada.</p>
+                <p style="font-size: 1.3em; margin-bottom: 20px;">El impacto real en la creación de MVPs</p>
+
+                <div class="race-track" style="margin-bottom: 20px;">
+                    <div class="race-lane">
+                        <span class="lane-label">Tradicional</span>
+                        <div class="runner-bar traditional" id="runner-trad">Semanas...</div>
                     </div>
-                    <div class="glass-card fragment">
-                        <i data-lucide="layout-template"></i>
-                        <h4>Web</h4>
-                        <p style="font-size: 0.8em;">Plataforma Next.js con autoguardado e identidad.</p>
+                    <div class="race-lane">
+                        <span class="lane-label">Antigravity</span>
+                        <div class="runner-bar magic" id="runner-anti">Minutos!</div>
                     </div>
-                    <div class="glass-card fragment">
-                        <i data-lucide="smartphone"></i>
-                        <h4>Mobile</h4>
-                        <p style="font-size: 0.8em;">App Flutter con IA Vision + Maps y offline first.</p>
+                </div>
+                <button id="btn-race" class="action-btn" style="margin-bottom: 20px;">Iniciar Comparativa</button>
+
+                <div class="grid-3">
+                    <div class="glass-card fragment" style="padding: 15px;">
+                        <i data-lucide="database" style="width: 40px; height: 40px; margin-bottom: 10px;"></i>
+                        <h4 style="font-size: 1.4em; margin-bottom: 5px;">Datos</h4>
+                        <p style="font-size: 1em; margin-bottom: 0;">Pipeline Medallion en Databricks con calidad gobernada.</p>
+                    </div>
+                    <div class="glass-card fragment" style="padding: 15px;">
+                        <i data-lucide="layout-template" style="width: 40px; height: 40px; margin-bottom: 10px;"></i>
+                        <h4 style="font-size: 1.4em; margin-bottom: 5px;">Web</h4>
+                        <p style="font-size: 1em; margin-bottom: 0;">Plataforma Next.js con autoguardado e identidad.</p>
+                    </div>
+                    <div class="glass-card fragment" style="padding: 15px;">
+                        <i data-lucide="smartphone" style="width: 40px; height: 40px; margin-bottom: 10px;"></i>
+                        <h4 style="font-size: 1.4em; margin-bottom: 5px;">Mobile</h4>
+                        <p style="font-size: 1em; margin-bottom: 0;">App Flutter con IA Vision e offline first.</p>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    Para mostrar el poder, pensemos en construir un pipeline de datos, una web moderna o una app compleja. Lo que antes tomaba un equipo y varias semanas de prototipado, ahora se genera en minutos gracias a Antigravity.
+                    Para mostrar el poder, pensemos en construir un pipeline de datos, una web moderna o una app
+                    compleja. Lo que antes tomaba un equipo y varias semanas de prototipado, ahora se genera en minutos
+                    gracias a Antigravity.
                 </aside>
             </section>
 
@@ -178,48 +224,61 @@
             <section>
                 <h2>Calidad por <span class="text-gradient">Diseño</span></h2>
                 <p>Escribe más rápido, pero también <strong>escribe mejor</strong>.</p>
-                
+
                 <div class="grid-2" style="margin-top: 30px;">
                     <div class="glass-card fragment" style="text-align: left;">
                         <h4>🎯 Idempotencia</h4>
-                        <p style="font-size: 0.8em;">Fallar de forma segura sin romper la consistencia.</p>
+                        <p style="font-size: 1.1em;">Fallar de forma segura sin romper la consistencia.</p>
                     </div>
                     <div class="glass-card fragment" style="text-align: left;">
                         <h4>🧩 Modularidad</h4>
-                        <p style="font-size: 0.8em;">Sin 'código espagueti'. Componentes limpios y separados.</p>
+                        <p style="font-size: 1.1em;">Cero 'código espagueti'. Componentes limpios.</p>
                     </div>
                     <div class="glass-card fragment" style="text-align: left;">
                         <h4>🛡️ Resiliencia</h4>
-                        <p style="font-size: 0.8em;">Circuit breakers automáticos para fallos de red.</p>
+                        <p style="font-size: 1.1em;">Circuit breakers automáticos para red.</p>
                     </div>
                     <div class="glass-card fragment" style="text-align: left;">
                         <h4>✅ Estándares</h4>
-                        <p style="font-size: 0.8em;">Código pre-validado y auditable por diseño.</p>
+                        <p style="font-size: 1.1em;">Código pre-validado y auditable.</p>
                     </div>
                 </div>
 
                 <aside class="notes">
-                    Antigravity no solo hace las cosas rápido. Aplica patrones de arquitectura avanzados automáticamente: idempotencia, resiliencia y clean code.
+                    Antigravity no solo hace las cosas rápido. Aplica patrones de arquitectura avanzados
+                    automáticamente: idempotencia, resiliencia y clean code.
                 </aside>
             </section>
 
             <!-- SLIDE 9: Skills -->
-            <section>
+            <section id="slide-skills">
                 <h2><span class="text-gradient">Skills:</span> De Saber a Hacer</h2>
-                <div class="glass-card fragment">
-                    <p style="font-size: 1.2em; border-left: 4px solid #8b5cf6; padding-left: 20px; font-style: italic;">
-                        Una IA que "sabe" es un consultor.<br>
-                        Una IA que "hace" es parte del equipo.
-                    </p>
-                </div>
+                <p style="font-size: 1.2em; margin-bottom: 15px;">Una IA que "sabe" es consultor. Una IA que "hace" es equipo.</p>
                 
-                <ul style="margin-top: 30px;">
-                    <li class="fragment"><strong>DevOps Autónomo:</strong> Detecta incidentes, parcha el error y despliega. Tiempo de respuesta: Segundos.</li>
-                    <li class="fragment"><strong>Reducción:</strong> -80% en tareas de mantenimiento de bajo nivel.</li>
+                <div class="terminal-window" style="margin: 0 auto; width: 80%; text-align: left;">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">devops-agent-01</span>
+                    </div>
+                    <div class="terminal-body" id="terminal-output" style="font-family: monospace; font-size: 1.2em; line-height: 1.6; color: #a3e635; min-height: 250px;">
+                        <span style="color: #666;">$ agente-devops status: esperando evento...</span><span class="cursor">_</span>
+                    </div>
+                </div>
+
+                <button id="btn-trigger-incident" class="action-btn error-btn" style="margin-top: 20px;">Simular Incidente P1</button>
+
+                <ul style="margin-top: 20px;">
+                    <li class="fragment" style="font-size: 1.2em;"><strong>DevOps Autónomo:</strong> Detecta incidentes, parcha el error y
+                        despliega en segundos.</li>
+                    <li class="fragment" style="font-size: 1.2em;"><strong>Reducción:</strong> -80% en tareas de bajo nivel.</li>
                 </ul>
 
                 <aside class="notes">
-                    Y llegamos a los "Skills". Gemini no solo te dice cómo arreglar algo. Con los Skills le damos herramientas para que él mismo ejecute. Detecta latencia, optimiza, levanta servidor. Cuestión de segundos.
+                    Y llegamos a los "Skills". Gemini no solo te dice cómo arreglar algo. Con los Skills le damos
+                    herramientas para que él mismo ejecute. Detecta latencia, optimiza, levanta servidor. Cuestión de
+                    segundos.
                 </aside>
             </section>
 
@@ -227,14 +286,16 @@
             <section>
                 <i data-lucide="cpu" style="width: 80px; height: 80px; stroke: #a78bfa; margin-bottom: 20px;"></i>
                 <h2>La Fábrica de Software de <span class="text-gradient">Alto Rendimiento</span></h2>
-                
+
                 <p style="font-size: 1.3em; margin: 30px 0;" class="fragment">
                     El <strong>humano</strong> como director estratégico.<br>
                     La <strong>IA</strong> como fuerza ejecutora.
                 </p>
 
                 <aside class="notes">
-                    En conclusión, estamos transformando el desarrollo. El ingeniero deja de ser un constructor de piezas sueltas y se convierte en un director estratégico. Bienvenidos a la fábrica de software de alto rendimiento.
+                    En conclusión, estamos transformando el desarrollo. El ingeniero deja de ser un constructor de
+                    piezas sueltas y se convierte en un director estratégico. Bienvenidos a la fábrica de software de
+                    alto rendimiento.
                 </aside>
             </section>
 
@@ -245,8 +306,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/notes/notes.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/zoom/zoom.min.js"></script>
-    
+
     <!-- Init Script -->
     <script src="js/init.js"></script>
+    
+    <!-- Custom Interactivity Script -->
+    <script src="js/interactivity.js"></script>
 </body>
+
 </html>

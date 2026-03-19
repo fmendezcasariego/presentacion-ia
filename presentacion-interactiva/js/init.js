@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
         transition: 'slide', // none/fade/slide/convex/concave/zoom
         transitionSpeed: 'fast',
         backgroundTransition: 'fade',
-        
+
         // Optional plugins
-        plugins: [ RevealZoom, RevealNotes, RevealHistory ]
+        plugins: [RevealZoom, RevealNotes]
     });
 
     // Initialize Lucide Icons
