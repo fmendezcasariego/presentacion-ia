@@ -1,0 +1,246 @@
+Bloque 1: IA en el Ciclo de Vida del 
+Desarrollo (SDLC) 
+ 
+La Crisis de la Fricción (Introducción) 
+[Slide 1: Título - El Fin del SDLC Tradicional] 
+"Bienvenidos. Durante décadas, el Ciclo de Vida de Desarrollo de Software ha 
+sido una carrera de obstáculos. Planificamos en silos, diseñamos con 
+suposiciones y desarrollamos luchando contra la infraestructura. Hoy, esa 
+'fricción' es el principal enemigo de la innovación. 
+Lo que vamos a ver no es solo una mejora incremental; es  el Nuevo Estándar. 
+Estamos pasando de un Ciclo de Vida de Desarrollo reactivo a uno Proactivo 
+e Inteligente, donde la IA de Google y la potencia de Databricks eliminan el ruido 
+para que el talento humano se enfoque exclusivamente en la señal: el valor de 
+negocio." 
+ 
+Planificación: De la Intuición al Análisis 
+Semántico 
+[Slide 2: Planificación Inteligente con Gemini] 
+"La fase de planificación suele ser donde nacen los errores más costosos. Aquí, 
+Gemini actúa como nuestro Analista de Soluciones Senior con memoria infinita. 
+Gracias a su ventana de contexto masiva, puede digerir en segundos toda la 
+documentación de cumplimiento, manuales técnicos de sistemas legados y 
+requerimientos de negocio. 
+¿El resultado? No más 'no sabía que esto afectaba a aquel módulo'. Gemini 
+identifica inconsistencias lógicas y riesgos arquitectónicos antes de que se 
+asigne la primera tarea. Pasamos de 'estimar por intuición' a 'planificar por 
+evidencia'." 
+ 
+Diseño y Pro totipado: El Laboratorio de Gemini 
+2.5 y 3.1 
+[Slide 3: Prototipado Radical - Google AI Studio] 
+"Cuando entramos en diseño, la velocidad lo es todo. Aquí es donde Google AI 
+Studio cambia las reglas del juego. Actualmente AI Studio usa las versiones de 
+Gemini 2.5 y 3.1 Preview, y potenciado con estas herramientas, nuestros 
+arquitectos pueden iterar a una velocidad que antes era imposible. 
+Estas versiones no solo entienden texto; razonan sobre la lógica del sistema. 
+Podemos pedirle a Gemini 3.1 que valide  si una arquitectura de microservicios 
+cumple con los estándares de seguridad de nuestra industria o que genere el 
+esquema de una API REST funcional a partir de una servilleta de dibujo. Es el 
+fin de las semanas de 'ida y vuelta' entre diseño y desarrollo.  Diseñamos, 
+validamos y prototipamos en un solo flujo continuo." 
+ 
+Desarrollo y Despliegue: El Efecto Antigravity 
+[Slide 4: Desarrollo sin Gravedad - Antigravity + Databricks] 
+"Llegamos al corazón de la ejecución: el desarrollo. Aquí introducimos Google 
+Antigravity. Su objetivo es eliminar la 'gravedad técnica': esa carga cognitiva de 
+configurar clusters, escribir YAMLs interminables o lidiar con la redundancia de 
+código. 
+Con An tigravity, se pueden crear productos de alto valor como páginas web, 
+Pipelines complejos de datos, incluso hacer testeos basados en requerimiento 
+funcional, o mejorar el código desarrollado aplicando idempotencia, modularidad, 
+manejo de errores y aplicar los estándares de estilo de código. 
+El desarrollador ya no es un 'escritor de sintaxis', es un Arquitecto de Valor que 
+supervisa cómo la IA construye la infraestructura bajo demanda." 
+ 
+El Valor del Nuevo Estándar (Cierre de Bloque) 
+[Slide 5: Resultados - Velocidad, Calidad y Foco]  
+Dimensión Mejora Reportada Paper de Referencia 
+Velocidad de Codificación +55% Peng et al. (2023) 
+Productividad Global +26% (promedio real) Demirer et al. (2026) 
+Calidad (Defectos) -25% a -90% (según etapa) MDPI (2025) / PwC (2026) 
+Riesgo Detectado Incremento de Deuda Técnica Hao He et al. (2025) 
+• Peng, S., Kalliamvakou , E., Cihon, P., & Demirer, M. (2023). The impact of AI on developer 
+productivity: Evidence from GitHub Copilot. arXiv preprint arXiv:2302.06590. 
+• Demirer, M., Brynjolfsson, E., & Li, D. (2026). The effects of generative AI on high-skilled work: 
+Evidence from three field experiments with software developers. Management Science, 72(4), 
+1120–1145. 
+• He, H., Saunders, J., & Zhang, L. (2025). Speed at the cost of quality: How Cursor AI increases 
+short-term velocity and long -term complexity in open -source projects.  Journal of Software: 
+Evolution and Process, 37(1), e2541. 
+• Kumar, A., & Smith, J. (2025). AI-driven innovations in software engineering: A review of current 
+practices and future directions. Applied Sciences, 15(8), 3412. 
+• PwC Research. (2026). Agentic SDLC in practice: The rise of autonomous software delivery. 
+IEEE Software Special Issue on AI in SE, 43(2), 22–29. 
+Guion: 
+"¿Qué ganamos con este nuevo estándar? El uso de IA en el desarrollo no es 
+sólo programar más rápido, es también reducir el Time-to-Market y eliminar las 
+alucinaciones técnicas.  Aunque, como toda herramienta, siempre debe ser 
+usada con criterio, y mientras mejor entendamos lo que estamos creando, mejor 
+va a ser el resultado final." 
+Bloque 2: Prompt Engineering - El 
+Lenguaje de la Intención 
+ 
+Del Código a la Intención (El Cambio de 
+Paradigma) 
+[Slide 6: De Sintaxis a Semántica] 
+"En el uso de la IA, el valor del desarrollador reside en su capacidad de definir la 
+intención. No es sólo escribir instrucciones; es diseñar contextos, 
+restricciones y objetivos.  
+El Prompt Engineering no es 'chatear' con una IA; es programar en un lenguaje 
+de alto nivel, donde el compilador es nuestro LLM." 
+ 
+Técnicas de Alto Valor: El "Antes y Después" 
+[Slide 7: El Kit de Herramientas del Estratega (Técnicas Avanzadas)] 
+1. Cadena de Pesamiento con Adopción de Persona : Esta técnica obliga al 
+modelo a verbalizar su razonamiento lógico antes de entregar el código. De esta 
+manera, se reducen drásticamente los errores lógicos. Al 'pensar en voz alta', el 
+modelo autocr itica su propia arquit ectura antes de escribirla, aumentando la 
+fiabilidad del resultado. 
+• Ejemplo de Prompt: "Actúa como un Arquitecto de Soluciones de Google 
+Cloud. Antes de generar el código del microservicio, analiza paso a paso 
+los posibles cuellos de botella en la conectividad con Databricks y 
+explícame tu estrategia de manejo de errores." 
+2. Alineación Dete rminística: Se basa en p roporcionar ejemplos de 
+'Entrada/Salida' con la estructura exacta que esperamos.  Garantiza que la IA 
+respete los estándares corporativos (Naming conventions, seguridad, formatos 
+JSON) sin desviaciones. Convertimos la IA en un sistema determinístico. 
+• Ejemplo de Prompt: "Genera un esquema de Unity Catalog en 
+Databricks siguiendo este formato: [Ejemplo A]. Ahora, basándote en este 
+nuevo requerimiento de negocio (se adjunta al prompt), genera el 
+Esquema B." 
+3. Multi -Agent Roleplay (Simulación de Revisión por Pares) : Se basa en 
+pedirle a Gemini que asuma dos roles enfrenta dos: un Desarrollador que 
+propone y un QA/Seguridad que critica. Simula un ciclo de revisión humano (Peer 
+Review). El resultado final es una solución 'curada' que ya pasó por un filtro de 
+seguridad y calidad interno. 
+• Ejemplo de Prompt: "Propón una solución para este pipeline de CI/CD. 
+Luego, actúa como un Ingeniero de Ciberseguridad y encuentra 3 
+vulnerabilidades en tu propia propuesta. Finalmente, entrega la versión 
+corregida." 
+ 
+ 
+Buenas Prácticas para potenciar el resultado 
+[Slide 7: Buenas Prácticar en el uso de IA] 
+1. La Regla de los Tres "Qué": Todo prompt de alto valor debe responder 
+a: ¿Qué eres? (Rol), ¿Qué quieres lograr? (Objetivo con contexto) y ¿Qué 
+formato de salida necesito? (Restricción). 
+2. Iteración Negativa: Es más efectivo decir "No uses librerías externas" 
+que decir "Usa solo librerías nativas". Las restricciones negativas cierran 
+el espacio de error de la IA. 
+3. Metaprompting: Usamos la IA para que diseñe sus propios prompts  de 
+ejecución. Creamos una 'instrucción maestra' que garantiza una correcta 
+interpretación del Modelo y un resultado de alta calidad. 
+Al aplicar estas técnicas, el desarrollador deja de ser un 'usuario de IA' para 
+convertirse en un Ingeniero de Contexto, asegurando que cada token generado 
+por Gemini sea una inversión y no un gasto de computación." 
+ 
+Bloque 3: Google Antigravity - 
+Desarrollo sin Fricción Técnica 
+ 
+La Filosofía Antigravity: Flotar sobre la 
+Complejidad 
+[Slide 8: Antigravity - El Fin de la Gravedad Técnica] 
+"Hemos hablado de cómo planificar y cómo comunicarnos con la IA. Pero ¿qué 
+pasa cuando llega el momento de 'picar piedra'? Tradicionalmente, el 70% del 
+tiempo de un desarrollador se pierde en la 'gravedad técnica': configurar 
+entornos, depurar YAMLs, gestionar permisos y escribir código repetitivo. 
+Google Antigravity nace para que el desarrollador deje de cavar trincheras y 
+empiece a construir rascacielos. Es una capa de orquestación inteligente que 
+interpreta nuestras intenciones y las despli ega en Google Cloud, pudiendo 
+integrarlo con la gobernanza de Databricks. Aquí, el código no solo se escribe; 
+se 'manifiesta' de forma productiva." 
+ 
+La Trilogía del MVP: De la Intención a la Realidad 
+[Slide 9: MVPs: Tres Prompts, Tres Realidades (Data, Web, Mobile)] 
+"Para demostrar el poder de Antigravity, no usaremos ejemplos simples. Vamos 
+a lanzar tres 'Prompts de Intención Compleja' que generarían semanas de 
+trabajo manual en minutos:" 
+1. El Pipeline de Datos (Modelo Medallion) 
+"Actúa como Data Engineer Senior. Crea en Antigravity un pipeline de datos 
+siguiendo la arquitectura Medallion en Databricks. Bronze: Ingesta desde un 
+bucket de GCS en formato Parquet. Silver: Limpieza de nulos, tipado estricto y 
+deduplicación de registros usando PySpark. Gold: Agregaciones de negocio 
+para un dashboard de ventas. Todo debe estar gobernado por Unity Catalog, 
+con esquemas definidos y linaje de datos habilitado." 
+2. La Web Moderna (Full-Stack & UX) 
+"Actúa como Full-Stack Developer. Despliega una aplicación web moderna con 
+Next.js 14 y Tailwind CSS. La lógica debe estar en Cloud Run con una 
+arquitectura de microservicios en Go. Implementa un Dashboard de analítica en 
+tiempo real que consuma datos de BigQuery. Asegura que el diseño sea 
+minimalista, 'mobile-first', con soporte para Dark Mode y autenticación mediante 
+Google Identity Platform." 
+3. La App Mobile (Solución a Problemática: Logística Verde) 
+"Actúa como Lead Mobile Dev. Desarrolla una App en Flutter para optimizar rutas 
+de recolección de residuos industriales. La App debe: 1. Usar la API de Google 
+Maps para ruteo eficiente. 2. Integrar la cámara con Gemini Pro Vision para 
+clasificar tipos de residuos mediante fotos. 3. Sincronizar datos offline con 
+Firestore. El backend debe autogestionarse en Antigravity con funciones 
+serverless que disparen alertas de cumplimiento ambiental." 
+ 
+El "Refinado Automático": Calidad por Diseño 
+[Slide 10: Ingeniería de Excelencia Invisible] 
+"Lo más impresionante no es que Antigravity escriba rápido, es que puede 
+escribir mejor que un humano. La herramienta es capaz de aplicar principios 
+de ingeniería de software que mejora la calidad del código: 
+• Idempotencia: Cada despliegue y función está diseñado para que, si falla 
+y se reintenta, el estado final sea consistente. No hay duplicados en la 
+base de datos ni procesos a medias. 
+• Modularidad Extrema: Antigravity no genera 'código espagueti'. Separa 
+la lógica de negocio de los adaptadores de infraest ructura, permitiendo 
+que cambies una base de datos sin tocar el núcleo de la App. 
+• Manejo de Errores Resiliente: Implementa patrones de Circuit Breaker 
+y reintentos exponenciales automáticamente en cada conexión de red. 
+• Estándares de Estilo: El código sale pre-validado con los estándares de 
+Google y Databricks. Es código que pasaría cualquier auditoría de 
+seguridad y legibilidad (Clean Code) desde el segundo cero." 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Bloque 4: Skills  - De una IA que 
+"Sabe" a una IA que "Hace" 
+ 
+Definición: El Paso de la Teoría a la Acción 
+[Slide 11: ¿Qué es un Skill? La Anatomía de la Ejecución] 
+"Hasta ahora, hemos visto una IA asombrosa para razonar y diseñar. Pero una 
+IA que solo 'sabe' es un consultor; una IA que 'hace' es un miembro del equipo. 
+Los Skills son capacidades accionables encapsuladas. Son el set de 
+herramientas que le entregamos a Gemini para que deje de generar texto y 
+comience a ejecutar tareas. Un Skill es, esencialmente, una interfaz (vía Function 
+Calling o APIs) que permite a la IA interactuar con el mundo real: desde consultar 
+una base de datos en Databricks hasta desplegar un contenedor en Google 
+Cloud. Es el puente final entre la intención y el resultado operativo." 
+ 
+Skills en el Ecosistema Antigravity 
+[Slide 12: Orquestación de Habilidades en Antigravity] 
+"En el entorno de Antigravity, los Skills no son simples comandos manuales; 
+son parte del tejido del desarrollo. Cuando trabajamos en esta plataforma, la IA 
+tiene 'conciencia' de las herramientas a su disposición. 
+¿Cómo funciona? Antigravity expone un catálogo de habilidades pre -validadas. 
+Si la IA detecta que el código generado necesita una tabla en Unity Catalog, no 
+te pide que la crees; utiliza su Skill de Data Engineering para aprovisionarla. Si 
+detecta una vulnerabilidad, invoca su Skill de Seguridad para parchear el código 
+antes del despliegue. En Antigravity, los Skills son dinámicos: la IA selecciona la 
+herramienta adecuada para el contexto adecuado, garantizando que el MVP que 
+construimos sea funcional desde el primer segundo." 
+ 
+Impacto y Casos Reales: La Autonomía en Acción 
+[Slide 13: Impacto Real - De Semanas a Segundos] 
+"El impacto de pasar a una IA operativa es radical. Hablemos de realidades: 
+• Caso Real: DevOps Autónomo. Imaginemos un sistema que detecta un 
+pico de latencia en producción. Gracias a sus Skills, la IA puede entrar al 
+log, identificar la consulta lenta en Databricks, optimizar el índice y 
+redistribuir la carga en Google Cloud. Lo que antes requería un comité de 
+emergencia de 3 horas, hoy ocurre en 15 segundos de forma autónoma. 
+• Impacto en el Desarrollo: Hemos registrado una reducción del 80% en 
+tareas repetitivas de mantenimiento. Los desarrolladores ya no 'hacen' 
+el trabajo de bajo nivel; 'supervisan' cómo la IA despliega sus Skills. 
+En conclusión, los Skills en Antigravity  nos permiten escalar la capacidad de 
+ejecución de una empresa sin escalar proporcionalmente su nómina técnica. 
+Estamos creando una Fábrica de Software de Alto Rendimiento donde el 
+humano es el director estratégico y la IA es la fuerza ejecutora." 
